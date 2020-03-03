@@ -2920,8 +2920,6 @@ body {
 .cid-rR91F9csyk .main-row {
   -webkit-justify-content: space-between;
   justify-content: space-between;
-  -webkit-flex-direction: row-reverse;
-  -ms-flex-direction: row-reverse;
 }
 .cid-rR91F9csyk .section-text {
   color: #333333;
@@ -2931,8 +2929,6 @@ body {
 }
 .cid-rR91F9csyk .text-block {
   padding-left: 0;
-  padding-right: 0;
-  padding-left: 1.5rem;
 }
 .cid-rR91F9csyk .mbr-section-btn {
   margin-left: -0.8rem;
