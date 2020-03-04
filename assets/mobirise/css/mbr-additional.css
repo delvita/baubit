@@ -1785,7 +1785,6 @@ section.lazy-placeholder:after {
 }
 .cid-rJrnICzHxX .navbar-dropdown {
   padding: .5rem 1rem;
-  position: fixed;
 }
 .cid-rJrnICzHxX a.nav-link {
   -webkit-justify-content: center;
@@ -2941,13 +2940,10 @@ body {
 @showTitle: true;
 @showSubtitle: true;
 @showButtons: false;
-@cardText: false;
-@cardBg: #333333;
 @tableText: true;
-@reverseContent: false;
-@uname__12: "file:///C:/Users/delvi/AppData/Local/Mobirise.com/Mobirise/facebook_0040delvita_002enet/addons/businessm4/components/features16/../_images/background8.jpg";
-@uname__13: true;
-@uname__14: #ffffff;
+@uname__10: "file:///C:/Users/delvi/AppData/Local/Mobirise.com/Mobirise/facebook_0040delvita_002enet/addons/businessm4/components/features16/../_images/background8.jpg";
+@uname__11: true;
+@uname__12: #ffffff;
 @bg-value: #ffffff;
 @bg-type: "color";
 @bg-color-value: #ffffff;
@@ -2979,7 +2975,8 @@ padding-bottom: (@paddingBottom * 15px);
   }
 }
 .section-text {
-  color: #333333;
+  color: #8d97ad;
+  text-align: right;
 }
 .mbr-overlay {
   background: linear-gradient(90deg, @overlayColor, @overlayColor2);
@@ -3043,6 +3040,115 @@ padding-bottom: (@paddingBottom * 15px);
 }
 }
 
+.cid-rShbXMRzF9 {
+@paddingTop: 6;
+@paddingBottom: 6;
+@showTitle: true;
+@showSubtitle: true;
+@showButtons: false;
+@tableText: true;
+@cardText: false;
+@cardBg: #333333;
+@reverseContent: false;
+@stylizedCounters: false;
+@counterColor: #333333;
+@uname__12: "file:///C:/Users/delvi/AppData/Local/Mobirise.com/Mobirise/facebook_0040delvita_002enet/addons/businessm4/components/features16/../_images/background8.jpg";
+@uname__13: true;
+@uname__14: #ffffff;
+@bg-value: #ffffff;
+@bg-type: "color";
+@bg-color-value: #ffffff;
+@bg-parallax: false;
+@gradientBg: false;
+@color2: #1ec5bf;
+@overlay: true;
+@overlayColor: #ffffff;
+@overlayColor2: #ffffff;
+@overlayOpacity: 0.8;
+
+padding-top: (@paddingTop * 20px);
+padding-bottom: (@paddingBottom * 15px);
+& when (@bg-type = 'color') {
+  background-color: @bg-value;
+  & when (@gradientBg) {
+    background: linear-gradient(90deg, @bg-value, @color2);
+  }
+}
+& when (@bg-type = 'image') {
+  background-image: url(../../../@bg-value);
+}
+.main-row {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  & when (@reverseContent) {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+  }
+}
+.section-text {
+  color: #444444;
+}
+.mbr-overlay {
+  background: linear-gradient(90deg, @overlayColor, @overlayColor2);
+}
+.text-block {
+  padding-left: 0;
+  & when (@reverseContent) {
+    padding-right: 0;
+    padding-left: 1.5rem;
+  }
+}
+.mbr-section-btn {
+  margin-left: -0.8rem;
+}
+.mbr-figure {
+  background: @cardBg;
+  overflow: hidden;
+  border-radius: .25rem;
+  box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+  padding: 0 !important;
+  & .card-text {
+    padding: 2rem;
+  }
+}
+.counter-container {
+  color: #767676;
+  padding-top: 1rem;
+  ul {
+    margin-bottom: 0;
+    padding-left: 1.5rem;
+    li {
+      margin-bottom: 1rem;
+      & when (@stylizedCounters) {
+        list-style: none;
+        &:before {
+          font-family: MobiriseIcons !important;
+          content: '\e966';
+          position: absolute;
+          left: 0px;
+          padding-top: 2px;
+          display: inline-block;
+          text-align: center;
+          margin: 4px 10px;
+          line-height: 10px;
+          transition: all .2s;
+          width: 16px;
+          height: 16px;
+          font-size: 16px !important;
+          font-weight: 500;
+          background: none;
+          color: @counterColor;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .mbr-text {
+  }
+}
+}
+
 .cid-rJrnICzHxX {
 @showLogo: true;
 @logoSize: 4.9;
@@ -3051,7 +3157,7 @@ padding-bottom: (@paddingBottom * 15px);
 @showIcons: false;
 @iconsAmount: "3";
 @showButtons: true;
-@sticky: true;
+@sticky: false;
 @collapsed: false;
 @transparent: false;
 @hamburgerColor: #ffffff;
